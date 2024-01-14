@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogicLoom Feedback Form</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+            color: #333;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+            color: #333;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button[type="button"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        button[type="button"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Feedback Form</h1>
+    <form action="/submit_feedback" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+        <label for="rating">Rate the product:</label>
+        <select id="rating" name="rating" required>
+            <option value="5">Excellent</option>
+            <option value="4">Very Good</option>
+            <option value="3">Good</option>
+            <option value="2">Fair</option>
+            <option value="1">Poor</option>
+        </select>
+
+        <label>Would you recommend this product?</label>
+        <input type="radio" id="recommend-yes" name="recommend" value="yes" required>
+        <label for="recommend-yes">Yes</label>
+        <input type="radio" id="recommend-no" name="recommend" value="no" required>
+        <label for="recommend-no">No</label>
+
+        <button type="submit">Submit Feedback</button>
+        <button type="button" onclick="window.location.href='https://www.logically.com/'">Cancel</button>
+    </form>
+</body>
+</html>

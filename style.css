@@ -1,0 +1,30 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.main {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #4285f4;
+    margin-bottom: 20px;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .main {
+        padding: 15px;
+    }
+}
