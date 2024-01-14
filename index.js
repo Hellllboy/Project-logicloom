@@ -18,7 +18,7 @@ db.on('error', () => console.log("Error in connecting the database"));
 db.once('open', () => console.log("Connected to database"));
 
 // Set your OpenAI API key
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "api-key";
 
 app.post("/submit_feedback", async (req, res) => {
     const name = req.body.name;
